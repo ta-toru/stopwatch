@@ -72,11 +72,3 @@ button:hover {
     opacity: 0.5; /* 透明度を上げる */
     cursor: not-allowed; /* カーソルを変更 */
 }
-
-@media (max-width: 700px) {
-    button {
-        width: 70px; /* スマホ用にサイズを調整 */
-        height: 70px; /* スマホ用にサイズを調整 */
-        font-size: 14px; /* スマホ用にフォントサイズを小さく */
-    }
-}
