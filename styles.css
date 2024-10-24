@@ -75,8 +75,8 @@ button:hover {
 
 @media (max-width: 600px) {
     button {
-        width: 60px; /* スマホ用にサイズを調整 */
-        height: 60px; /* スマホ用にサイズを調整 */
+        width: 70px; /* スマホ用にサイズを調整 */
+        height: 70px; /* スマホ用にサイズを調整 */
         font-size: 14px; /* スマホ用にフォントサイズを小さく */
     }
 }
