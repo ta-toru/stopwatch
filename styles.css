@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    position: relative; /* 位置を相対的に設定 */
+}
+
+.stopwatch {
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%; /* 幅を80%に設定 */
+    max-width: 400px; /* 最大幅を400pxに制限 */
+    position: absolute; /* 絶対位置に設定 */
+    top: 50%; /* 縦中央 */
+    left: 50%; /* 横中央 */
+    transform: translate(-50%, -50%); /* 中央に配置 */
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    font-size: 12px;
+    margin: 5px;
+    cursor: pointer;
+    width: 70px; /* ボタンの幅を固定 */
+    height: 70px; /* ボタンの高さを固定 */
+    border: none; /* ボーダーを消去 */
+    border-radius: 50%; /* 円形にする */
+    background-color: #007bff; /* ボタンの背景色 */
+    color: white; /* テキストの色 */
+    transition: background-color 0.3s; /* ホバー時の色変更アニメーション */
+}
+
+#start {
+    background-color: green; /* 開始ボタンを緑色に */
+}
+
+#stop {
+    background-color: red; /* 停止ボタンを赤色に */
+}
+
+#lap, #reset {
+    background-color: gray; /* リセットとラップボタンを灰色に */
+}
+
+button:hover {
+    background-color: #0056b3; /* ホバー時の色 */
+}
+
+/* ラップタイムのスタイル */
+#laps div {
+    color: white; /* ラップタイムのテキストを白に */
+    margin-top: 20px; /* ボタンとラップタイムの間に余白を追加 */
+}   
+
+/* 無効な状態のスタイル */
+.disabled {
+    opacity: 0.5; /* 透明度を上げる */
+    cursor: not-allowed; /* カーソルを変更 */
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 60px; /* スマホ用にサイズを調整 */
+        height: 60px; /* スマホ用にサイズを調整 */
+        font-size: 14px; /* スマホ用にフォントサイズを小さく */
+    }
+}
