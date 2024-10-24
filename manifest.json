@@ -1,6 +1,6 @@
 {
-    "name": "PWA Sample",
-    "short_name": "PWA",
+    "name": "Watch",
+    "short_name": "時計",
     "background_color": "#fc980c",
     "icons": [{
         "src": "./icon-256.png",
