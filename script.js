@@ -89,12 +89,6 @@ function formatTime(time) {
            (milliseconds < 10 ? "0" : "") + milliseconds;
 }
 
-function noscroll(e){
-    e.preventDefault();
-    document.removeEventListener('touchmove', noscroll);
-    document.removeEventListener('wheel', noscroll)
-}
-
 startButton.addEventListener("click", startTimer);
 stopButton.addEventListener("click", stopTimer);
 resetButton.addEventListener("click", resetTimer);
@@ -102,4 +96,3 @@ lapButton.addEventListener("click", lapTimer);
 
 // 初期状態でラップボタンを無効にする
 lapButton.classList.add("disabled");
-window.onload = noscroll(e);
