@@ -34,7 +34,7 @@ body {
 button {
     padding: 10px;
     font-size: 12px;
-    margin: 100px;
+    margin: 5px;
     cursor: pointer;
     width: 70px; /* ボタンの幅を固定 */
     height: 70px; /* ボタンの高さを固定 */
