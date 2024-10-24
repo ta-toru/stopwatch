@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ストップウォッチ</title>
+</head>
+<body>
+    <div class="stopwatch">
+        <div id="display">00:00.00</div>
+        <button id="reset" style="display: none;">リセット</button> <!-- リセットボタンを最初に -->
+        <button id="lap">ラップ</button> <!-- ラップボタンをそのまま -->
+        <button id="start">開始</button>
+        <button id="stop" style="display: none;">停止</button>
+        <div id="laps"></div> <!-- ラップタイムを表示する部分 -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
