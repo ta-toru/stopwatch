@@ -20,7 +20,7 @@ body {
     width: 90%; /* 幅を90%に設定 */
     max-width: 500px; /* 最大幅を500pxに制限 */
     position: absolute; /* 絶対位置に設定 */
-    top: 245px; /* 縦中央 */
+    top: 242px; /* 縦中央 */
     left: 50%; /* 横中央 */
     transform: translate(-50%, -50%); /* 中央に配置 */
 }
@@ -33,11 +33,11 @@ body {
 
 button {
     padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
     margin: 5px;
     cursor: pointer;
-    width: 75px; /* ボタンの幅を固定 */
-    height: 75px; /* ボタンの高さを固定 */
+    width: 80px; /* ボタンの幅を固定 */
+    height: 80px; /* ボタンの高さを固定 */
     border: none; /* ボーダーを消去 */
     border-radius: 50%; /* 円形にする */
     background-color: #007bff; /* ボタンの背景色 */
