@@ -96,3 +96,6 @@ lapButton.addEventListener("click", lapTimer);
 
 // 初期状態でラップボタンを無効にする
 lapButton.classList.add("disabled");
+
+// ピンチイン・ピンチアウト禁止
+document.documentElement.addEventListener('touchstart', function (e) {if (e.touches.length >= 2) {e.preventDefault();}}, {passive: false});
