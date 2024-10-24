@@ -36,8 +36,8 @@ button {
     font-size: 12px;
     margin: 5px;
     cursor: pointer;
-    width: 70px; /* ボタンの幅を固定 */
-    height: 70px; /* ボタンの高さを固定 */
+    width: 75px; /* ボタンの幅を固定 */
+    height: 75px; /* ボタンの高さを固定 */
     border: none; /* ボーダーを消去 */
     border-radius: 50%; /* 円形にする */
     background-color: #007bff; /* ボタンの背景色 */
