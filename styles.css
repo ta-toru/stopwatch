@@ -66,10 +66,17 @@ button:hover {
 }
 
 /* ラップタイムのスタイル */
-#laps div {
+#laps {
+    position: absolute; /* 絶対位置に設定 */
+    top: 400px; /* 初期位置 */
+    left: 50%; /* 横中央 */
+    transform: translateX(-50%); /* 中央に配置 */
     color: white; /* ラップタイムのテキストを白に */
-    margin-top: 20px; /* ボタンとラップタイムの間に余白を追加 */
-}   
+}
+
+#laps div {
+    margin-top: 10px; /* ラップタイム間のスペース */
+}
 
 /* 無効な状態のスタイル */
 .disabled {
