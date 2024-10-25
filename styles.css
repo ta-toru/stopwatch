@@ -21,8 +21,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* 幅を100%に設定 */
     position: absolute; /* 絶対位置に設定 */
-    top: 290px; /* 縦中央 */
+    top: 242px; /* 縦中央 */
     left: 50%; /* 横中央 */
     transform: translate(-50%, -50%); /* 中央に配置 */
 }
@@ -47,17 +48,17 @@ button {
 }
 
 #start {
-    margin: 80px 10px 20px 64px;
+    margin: 20px 10px 20px 80px;
     background-color: green; /* 開始ボタンを緑色に */
 }
 
 #stop {
-    margin: 80px 10px 20px 64px;
+    margin: 20px 10px 20px 80px;
     background-color: red; /* 停止ボタンを赤色に */
 }
 
 #lap, #reset {
-    margin: 80px  64px 20px 10px;
+    margin: 20px 80px 20px 10px;
     background-color: gray; /* リセットとラップボタンを灰色に */
 }
 
@@ -68,14 +69,24 @@ button:hover {
 /* ラップタイムのスタイル */
 #laps {
     position: absolute; /* 絶対位置に設定 */
-    top: 370px; /* 初期位置 */
+    top: 400px; /* 初期位置 */
     left: 50%; /* 横中央 */
     transform: translateX(-50%); /* 中央に配置 */
     color: white; /* ラップタイムのテキストを白に */
+    white-space: nowrap;
 }
 
 #laps div {
-    margin-top: 10px; /* ラップタイム間のスペース */
+    margin-top: 15px; /* 各ラップの間のスペース */
+}
+
+/* ラップ回数とタイムの間の隙間を追加 */
+#laps div::before {
+    content: "ラップ" attr(data-lap) ; /* ラップ番号を表示 */
+}
+
+#laps div span {
+    margin-left: 250px; /* ラップ回数とタイムの間にスペースを追加 */
 }
 
 /* 無効な状態のスタイル */
