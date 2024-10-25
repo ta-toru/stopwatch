@@ -22,7 +22,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: absolute; /* 絶対位置に設定 */
-    top: 242px; /* 縦中央 */
+    top: 300px; /* 縦中央 */
     left: 50%; /* 横中央 */
     transform: translate(-50%, -50%); /* 中央に配置 */
 }
