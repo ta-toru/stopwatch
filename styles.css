@@ -38,8 +38,8 @@ button {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    width: 90px; /* ボタンの幅を固定 */
-    height: 90px; /* ボタンの高さを固定 */
+    width: 85px; /* ボタンの幅を固定 */
+    height: 85px; /* ボタンの高さを固定 */
     border: none; /* ボーダーを消去 */
     border-radius: 50%; /* 円形にする */
     background-color: #007bff; /* ボタンの背景色 */
@@ -118,7 +118,7 @@ button:hover {
 
 #fixedImage {
     position: fixed; /* 固定位置 */
-    bottom: 10px; /* 画面の一番下 */
+    bottom: 12px; /* 画面の一番下 */
     left: 50%; /* 横中央 */
     transform: translateX(-50%); /* 中央に配置 */
     width: 100%; /* 画面幅に合わせる */
