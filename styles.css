@@ -47,17 +47,17 @@ button {
 }
 
 #start {
-    margin: 20px 10px 20px 80px;
+    margin: 20px 10px 20px 64px;
     background-color: green; /* 開始ボタンを緑色に */
 }
 
 #stop {
-    margin: 20px 10px 20px 80px;
+    margin: 20px 10px 20px 64px;
     background-color: red; /* 停止ボタンを赤色に */
 }
 
 #lap, #reset {
-    margin: 20px  80px 20px 10px;
+    margin: 20px  64px 20px 10px;
     background-color: gray; /* リセットとラップボタンを灰色に */
 }
 
