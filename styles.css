@@ -74,3 +74,21 @@ button:hover {
     opacity: 0.5; /* 透明度を上げる */
     cursor: not-allowed; /* カーソルを変更 */
 }
+
+.circle1 {
+    width: 8px; /* 丸のサイズ */
+    height: 8px;
+    background-color: white; /* 丸の色 */
+    border-radius: 50%; /* 丸くするためのスタイル */
+    display: inline-block; /* ボタンと並ぶようにする */
+    margin: 0 3px; /* 丸とボタンの間のスペース */
+}
+
+.circle2 {
+    width: 8px; /* 丸のサイズ */
+    height: 8px;
+    background-color: gray; /* 丸の色 */
+    border-radius: 50%; /* 丸くするためのスタイル */
+    display: inline-block; /* ボタンと並ぶようにする */
+    margin: 0 3px; /* 丸とボタンの間のスペース */
+}
