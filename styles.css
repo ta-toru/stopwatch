@@ -23,7 +23,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%; /* 幅を100%に設定 */
     position: absolute; /* 絶対位置に設定 */
-    top: 242px; /* 縦中央 */
+    top: 260px; /* 縦中央 */
     left: 50%; /* 横中央 */
     transform: translate(-50%, -50%); /* 中央に配置 */
 }
@@ -77,7 +77,7 @@ button:hover {
 }
 
 #laps div {
-    margin-top: 15px; /* 各ラップの間のスペース */
+    margin-top: 20px; /* 各ラップの間のスペース */
 }
 
 /* ラップ回数とタイムの間の隙間を追加 */
