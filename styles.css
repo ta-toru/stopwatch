@@ -68,7 +68,7 @@ button:hover {
 /* ラップタイムのスタイル */
 #laps {
     position: absolute; /* 絶対位置に設定 */
-    top: 400px; /* 初期位置 */
+    top: 370px; /* 初期位置 */
     left: 50%; /* 横中央 */
     transform: translateX(-50%); /* 中央に配置 */
     color: white; /* ラップタイムのテキストを白に */
