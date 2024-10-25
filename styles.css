@@ -115,3 +115,14 @@ button:hover {
     display: inline-block; /* ボタンと並ぶようにする */
     margin: 0 3px; /* 丸とボタンの間のスペース */
 }
+
+#fixedImage {
+    position: fixed; /* 固定位置 */
+    bottom: 0; /* 画面の一番下 */
+    left: 50%; /* 横中央 */
+    transform: translateX(-50%); /* 中央に配置 */
+    width: 100%; /* 画面幅に合わせる */
+    max-height: 100px; /* 高さを制限（必要に応じて変更） */
+    object-fit: cover; /* 画像がボックスに収まるように */
+    z-index: 10; /* 他の要素の上に表示 */
+}
