@@ -57,7 +57,7 @@ function resetTimer() {
 
     startButton.style.display = "inline"; // 開始ボタンを表示
     stopButton.style.display = "none"; // 停止ボタンを非表示
-    lapButton.style.display = "inline"; // ラップボタンを非表示
+    lapButton.style.display = "inline"; // ラップボタンを表示
     resetButton.style.display = "none"; // リセットボタンを非表示
     lapButton.classList.add("disabled"); // ラップボタンを無効にする
 }
@@ -68,7 +68,16 @@ function lapTimer() {
         const lapTime = formatTime(difference);
         const lapDiv = document.createElement("div");
         lapDiv.innerHTML = `ラップ ${lapCount}: ${lapTime}`;
-        laps.insertBefore(lapDiv, laps.firstChild); // 新しいラップを先頭に追加
+        
+        // 既存のラップタイムを下にずらす
+        const existingLaps = laps.getElementsByClassName("lap-time");
+        for (let i = 0; i < existingLaps.length; i++) {
+            existingLaps[i].style.marginTop = "10px"; // ずらし
+        }
+
+        // 新しいラップを先頭に追加
+        lapDiv.classList.add("lap-time");
+        laps.insertBefore(lapDiv, laps.firstChild);
     }
 }
 
@@ -96,6 +105,3 @@ lapButton.addEventListener("click", lapTimer);
 
 // 初期状態でラップボタンを無効にする
 lapButton.classList.add("disabled");
-
-// ピンチイン・ピンチアウト禁止
-document.documentElement.addEventListener('touchstart', function (e) {if (e.touches.length >= 2) {e.preventDefault();}}, {passive: false});
