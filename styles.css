@@ -38,8 +38,8 @@ button {
     padding: 10px;
     font-size: 14px;
     cursor: pointer;
-    width: 80px; /* ボタンの幅を固定 */
-    height: 80px; /* ボタンの高さを固定 */
+    width: 90px; /* ボタンの幅を固定 */
+    height: 90px; /* ボタンの高さを固定 */
     border: none; /* ボーダーを消去 */
     border-radius: 50%; /* 円形にする */
     background-color: #007bff; /* ボタンの背景色 */
@@ -48,17 +48,17 @@ button {
 }
 
 #start {
-    margin: 70px 10px 20px 80px;
+    margin: 80px 10px 20px 80px;
     background-color: green; /* 開始ボタンを緑色に */
 }
 
 #stop {
-    margin: 70px 10px 20px 80px;
+    margin: 80px 10px 20px 80px;
     background-color: red; /* 停止ボタンを赤色に */
 }
 
 #lap, #reset {
-    margin: 70px 80px 20px 10px;
+    margin: 80px 80px 20px 10px;
     background-color: gray; /* リセットとラップボタンを灰色に */
 }
 
@@ -118,7 +118,7 @@ button:hover {
 
 #fixedImage {
     position: fixed; /* 固定位置 */
-    bottom: 0; /* 画面の一番下 */
+    bottom: 10; /* 画面の一番下 */
     left: 50%; /* 横中央 */
     transform: translateX(-50%); /* 中央に配置 */
     width: 100%; /* 画面幅に合わせる */
