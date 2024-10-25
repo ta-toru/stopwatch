@@ -77,7 +77,7 @@ button:hover {
 }
 
 #laps div {
-    margin-top: 15px; /* 各ラップの間のスペース */
+    margin-top: 30px; /* 各ラップの間のスペース */
 }
 
 /* ラップ回数とタイムの間の隙間を追加 */
