@@ -67,8 +67,9 @@ function lapTimer() {
         lapCount++;
         const lapTime = formatTime(difference);
         const lapDiv = document.createElement("div");
-        lapDiv.innerHTML = `ラップ ${lapCount}: ${lapTime}`;
-        
+        lapDiv.setAttribute("data-lap", lapCount); // ラップ番号を属性として設定
+        lapDiv.innerHTML = `<span>${lapTime}</span>`; // ラップタイムを含める
+
         // 既存のラップタイムを下にずらす
         const existingLaps = laps.getElementsByClassName("lap-time");
         for (let i = 0; i < existingLaps.length; i++) {
